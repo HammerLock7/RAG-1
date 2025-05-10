@@ -6,7 +6,7 @@ url = "http://localhost:11434/api/generate"
 data = {
 
     "model": "llama3.2",
-    "prompt": "Who is Cristiano Ronaldo",
+    "prompt": "What is a leap year",
 
 }
 
