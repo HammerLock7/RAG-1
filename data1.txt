@@ -1,0 +1,587 @@
+                                                                Biomass and Bioenergy 91 (2016) 288e295
+
+
+
+                                                            Contents lists available at ScienceDirect
+
+
+                                                            Biomass and Bioenergy
+                                      journal homepage: http://www.elsevier.com/locate/biombioe
+
+
+Research paper
+
+Methane production for sanitation improvement in Haiti
+Stephanie Lansing a, *, Holly Bowen a, Kyla Gregoire b, 1, Katherine Klavon a,
+Andrew Moss a, Alexander Eaton c, Yen-Jung Lai a, 2, Kayoko Iwata a
+a
+  University of Maryland, Department of Environmental Science and Technology, College Park, MD, USA
+b
+  University of Maryland, Department of Civil and Environmental Engineering, College Park, MD, USA
+c
+  Instituto Internacional de Recursos Renovables AC (IRRI), Mexico City, Mexico
+
+
+
+
+a r t i c l e i n f o                                 a b s t r a c t
+
+Article history:                                      There is a great need for decentralized anaerobic digestion (AD) that utilizes wastewater for energy
+Received 25 March 2015                                generation. The biochemical methane potential (BMP) of Haitian latrine waste was determined and
+Accepted 20 May 2016                                  compared to other waste streams, such as grey water, septage, and dairy manure. Average methane (CH4)
+Available online 13 June 2016
+                                                      production for the latrine waste (13.6 ml ml1 substrate) was 23 times greater than septage
+                                                      (0.58 ml ml1 substrate), and 151 times greater than grey water (0.09 ml ml1 substrate), illustrating the
+Keywords:
+                                                      larger potential when waste is source separated using the decentralized sanitation and reuse (DESAR)
+Anaerobic digestion
+                                                      concept for more appropriate treatment of each waste stream. Using the BMP results, methane pro-
+Biogas
+Biochemical methane potential (BMP)
+                                                      duction based on various AD conﬁgurations was calculated, and compared with the full-scale ﬁeld AD
+Pit latrine                                           design. Methane potential from the BMP testing was calculated as 0.006e0.017 m3 person1 day1 using
+Wastewater                                            the lowest and highest latrine BMP results, which was similar to the values from the full-scale system
+Grey water                                            (0.011 m3 person1 day1), illustrating the ability of BMPs to be used to predict biogas production from
+                                                      sanitation digesters in a smaller-scale setting.
+                                                                                                                       © 2016 Elsevier Ltd. All rights reserved.
+
+
+
+
+1. Introduction                                                                         734,134 reported cholera cases and 8896 conﬁrmed deaths due to
+                                                                                        cholera as of 28 February 2015 [3].
+1.1. Sanitation needs in Haiti                                                              In the U.S., approximately 0.5 kWh of electricity is needed to
+                                                                                        treat each m3 of wastewater, accounting for 3% of all U.S. electricity
+    It is estimated that 37% of the world population (2.5 billion                       use [4]. In Haiti, feasibility studies revealed that construction,
+people) do not have access to improved sanitation, with 1.1 billion                     operation, and maintenance costs for centralized wastewater
+people practicing open defecation due to limited access to the re-                      treatment would exceed the local capacity to pay [5]. Additionally,
+sources needed to properly collect and dispose of waste [1]. This                       the country’s electric grid provides irregular coverage to only 10% of
+results in poor water quality accounting for up to 1.7 million deaths                   the population, with wood and charcoal representing 70% of the
+per year (3.1% of world deaths/year) [2]. The country of Haiti serves                   energy use within the country. Cooking fuel is estimated to require
+as an example where sanitation and energy needs are some of the                         25e50% of daily income [6], or $6e10 per family per week in
+most pressing, with no centralized sewage treatment and less than                       charcoal expenses for cooking. The continual use of charcoal and
+27% of the population having access to improved sanitation [1]. The                     ﬁrewood for basic energy needs has resulted in soil erosion and
+2010 earthquake and on-going cholera outbreak in Haiti high-                            deforestation throughout the country, leaving only 1.5% of the land
+lighted the dire consequences of inadequate waste treatment, with                       forested [6].
+                                                                                            Energy-neutral, land-based treatment methods (e.g. lagoons
+                                                                                        and stabilization ponds) have proven effective in rural areas;
+  * Corresponding author. University of Maryland, 1449 Animal Science/Ag Engi-
+                                                                                        however, they require centralized collection and a large footprint.
+neering Bldg, College Park, MD 20742, USA.                                              The effectiveness of pit latrines is greatly dependent on the char-
+    E-mail address: slansing@umd.edu (S. Lansing).                                      acteristics of the underlying soils and hydrology. Dry, composting
+  1
+    Present address: US Agency for International Development. Washington, D.C.,         latrines have been implemented in a number of developing coun-
+USA.
+  2                                                                                     tries, including successful implementation by Sustainable Organic
+    Present address: Swette Center for Environmental Biotechnology, Biodesign
+Institute, Arizona State University, Tempe, AZ, USA.                                    Integrated Livelihoods (SOIL) in Haiti. However, payment for this
+
+http://dx.doi.org/10.1016/j.biombioe.2016.05.032
+0961-9534/© 2016 Elsevier Ltd. All rights reserved.
+                                                S. Lansing et al. / Biomass and Bioenergy 91 (2016) 288e295                                      289
+
+
+technology relies solely on the economic value of fertilizer, requires          treating human wastewater through AD at the small-scale. This
+a constant carbon source input, and does not exploit the                        research sought to understand the biochemical methane potential
+biochemical energy of waste: 4.41 kWh of energy in each kg of                   (BMP) of the latrine waste, compare them to other waste streams,
+sugar or per 1.06 kg of chemical oxygen demand (COD) [7].                       such as grey water and dairy manure, and verify CH4 production
+                                                                                and treatment potential using a full-scale, low-cost sanitary
+1.2. Anaerobic digestion                                                        digester in Haiti. Speciﬁcally, the objectives were to: (1) determine
+                                                                                the BMP of source-separated wastewater sources, including grey
+   An anaerobic digester can harness a signiﬁcant proportion of the             water, septage pit, and latrine waste from a hospital in rural Haiti;
+potential energy in wastewater, with a reported 0.17 m3 of methane              (2) estimate CH4 potentials with various AD design conﬁgurations
+(CH4) produced per m3 of domestic wastewater, assuming a dilute                 through modeling calculations; and (3) compare CH4 production
+combined grey water and black water sewage wastewater inﬂuent                   from the full-scale DESAR AD system to the calculated BMP values.
+chemical oxygen demand (COD) concentration of 0.8 g L1, with
+60% conversion of COD to CH4 [8]. During anaerobic digestion (AD),              2. Materials and methods
+a consortium of microorganisms break down the organic matter
+(COD) in the waste, resulting in the production of biogas with                  2.1. Site description
+55e75% CH4, which can be used for cooking, heating, or electricity
+generation. The AD process results in the stabilization of the treated              The Partners in Health (PIH) medical complex in Cange is situ-
+waste through large reductions in solids, pathogens, and odors, and             ated sixty miles northeast of Port-au-Prince, Haiti (18 550 0N;
+the creation of a high nutrient soil amendment [9,10].                          71580 60W) and provides healthcare to approximately 2000 people
+   The USEPA [11] stated that the main barriers to the widespread               per day from the local rural population and includes an outpatient
+adoption of AD technology in the U.S. are the cost and sophisti-                clinic, serving 100e400 patients a day, and a 1000-student K-12
+cation of the operating equipment. In contrast, low-cost non-                   school. The PIH complex has two types of toilets: ﬂush toilets that
+mechanized AD designs, such as the plug-ﬂow, Taiwanese-model                    convey the black water from the toilet into septage pits and dry
+digester and other similar tubular plug-ﬂow designs, have suc-                  latrine privies situated above larger septage pits. Grey water from
+cessfully treated agricultural manure in Latin America and Asia                 the hospital and clinics’ operating rooms is also directed to septage
+with minimal energy inputs. In tropical climates, where mesophilic              pits. Grey water from other sinks, showers, and laundry areas is not
+(20e45  C) digestion can be maintained without heating, such AD                stored in septage pits, but instead ﬂows over a trickling rock ﬁlter
+designs have been shown to produce viable quantities of CH4 and                 before discharge into a ravine. Overall, the PIH complex has 17
+large reductions in organic waste [12,13]. To date, there are over              septage pits that receive a combination of black water from 86 ﬂush
+100,000 Taiwanese-model systems in tropical areas of Asia and                   toilets, latrine waste from ﬁve latrine structures with multiple
+Latin America, with the vast majority used to treat dairy and swine             privies, and grey water from the hospital operating rooms and
+manure [14]. There are far fewer plug-ﬂow systems utilizing only                clinics.
+human waste as the digestion input, with little to no published
+data, largely due to the lower solids content, conveyance difﬁ-                 2.2. Sample collection for biochemical methane potential (BMP)
+culties, and pathogenic concerns with human waste. Based on the                 analyses
+success of the agricultural-based AD systems in similar resource-
+limited settings, their potential as a viable and sustainable sanita-               To characterize the waste and perform biochemical methane
+tion solution for Haiti was quantiﬁed.                                          potential (BMP) testing, grab samples were taken during seven
+                                                                                collection periods from March 2010 to June 2012 from three
+1.3. DESAR: Decentralized Sanitation and Reuse                                  wastewater sources: latrines, septage pits and grey water. No
+                                                                                separate black water samples were collected, as the black water
+   An AD system can use the Decentralized Sanitation and Reuse                  pipes are inaccessible, entering the septage pits underneath the
+(DESAR) concept to separate black water (originating from toilets:              latrine feces. The wastewater collected from Latrine 1, the School
+feces, urine and ﬂush water), and grey water (originating from                  latrine pit, received latrine waste from 1000 children and black
+washrooms, showers and kitchens) for more appropriate treatment                 water from three toilets used by 15 teachers and 5 residents. Latrine
+of these different waste sources. Studies have shown that in do-                2, the Outpatient Clinic latrine, received latrine waste from 350
+mestic wastewater, 51% of chemical oxygen demand (COD), 91% of                  patients and black water from 7 toilets used by 5 clinic staff
+nitrogen, 78% of phosphorus, and the majority of the pathogens are              members and 3e5 foreign visitors. The Hospital Septage Pit received
+contained in black water [15]. Separately treating black water re-              black water from 12 Hospital toilets and grey water from sinks and
+sults in a decrease in AD reactor size, thereby reducing capital costs          showers within the hospital ward and operating rooms. Grey Water
+and space requirements [15,16]. Studies have shown that when                    1 was a mixture of all the grey water sources (Grey Water 2e4) in
+black water is separated and anaerobically digested, recovery and               the PIH complex. Grey Water 2 originated from sinks and showers in
+reuse of the more concentrated dissolved nutrients in the AD                    the Outpatient Clinic. Grey Water 3 originated from the Hospital
+efﬂuent becomes more feasible [15,17]. While previous studies                   Kitchen and Grey Water 4 from the Hospital sinks and showers. In
+stated that DESAR is especially applicable to developing countries              addition, freshly excreted dairy manure from local dairy cows in
+[18,19], there is a lack of literature regarding use of DESAR in                Cange was analyzed to determine how the latrine waste compared
+developing countries, like Haiti, where treatment of black water in             with the more traditional input (dairy manure) in Taiwanese-model
+septic or latrine systems and direct discharge of grey water is more            digestion systems.
+common.                                                                             All samples were transported on ice from Haiti to College Park,
+                                                                                MD within two days of collection and stored at 4  C. Samples were
+1.4. Research objectives                                                        analyzed for pH, COD, total solids (TS), and volatile solids (VS),
+                                                                                according to Standard Methods [20]. Signiﬁcant differences in these
+   The majority of research on AD of wastewater has focused on                  environmental characteristics and CH4 production (cumulative CH4
+activated sludge digestion at wastewater treatment plants or                    and percent CH4) were statistically analyzed using analysis of
+manure-based digesters but little research has been conducted on                variance (ANOVA) and Tukey-Kramer multiple comparisons. P-
+290                                                       S. Lansing et al. / Biomass and Bioenergy 91 (2016) 288e295
+
+
+values < 0.05 were considered signiﬁcant. All values are reported as                      containing only media and inoculum were incubated and sampled
+averages ± standard error (SE).                                                           simultaneously to account for CH4 production not attributed to the
+                                                                                          substrate. Inoculum for BMPs 1e3 was obtained from a dairy
+                                                                                          manure AD at USDA’s Beltsville Agricultural Research Center
+2.3. Biochemical methane potential (BMP) testing                                          (BARC), and inoculum for BMP4 was obtained from a sanitary
+                                                                                          wastewater AD at the Alexandria, VA wastewater treatment plant.
+    The BMP experiments were conducted using samples from four                            The average value from the inoculum control bottles was sub-
+sample collection periods (BMP1: June 2010, BMP2: October 2010,                           tracted from all reported CH4 data to account for CH4 production
+BMP3: January 2011, and BMP4: June 2012). The BMP assay was                               not attributed to the substrate.
+developed to determine the CH4 yield of organic material during                               The inoculum to substrate ratio (ISR) is reported using nor-
+AD by a mixed microbial community in a deﬁned medium [21,22].                             malizations by volume and VS (Table 1). The experimental design
+For the BMP experiments, the substrate was incubated under                                varied for each BMP due to differences in inoculum and waste
+anaerobic conditions for 30e70 days (until the biogas production                          source VS concentrations. BMP 4 was loaded using a 1:1 ISR (by VS)
+largely ceased) in triplicate 250 mL serum bottles (200 mL liquid                         using inoculum from a sanitary wastewater AD. In BMP1-BMP3,
+volume and 50 mL headspace) with inoculum and nutrient media                              various modiﬁed VS-based ISRs were used due to the lower VS of
+at 35  C [22]. The inoculum provided an enriched source of bacteria,                     the dairy manure AD at BARC. If a 1:1 ISR was used, < 3 ml of
+including methanogens acclimated to an anaerobic environment,                             inoculum would have been added to each 250 ml grey water BMP
+thereby reducing the lag time in CH4 production. Mineral media                            bottle and < 3 ml of latrine substrate would have been added to
+was prepared according to Moody et al. [23], which was adapted                            each latrine bottle due to the large differences in VS concentrations
+from ASTM [22]. The media contained 6 g/L sodium bicarbonate as                           of these substrates compared to the control, and therefore, ad-
+a pH buffer and 18 micro and macronutrients to assure that nitro-                         justments were made to the ISR to increase the amount of inoculum
+gen, phosphorus, potassium and micronutrients were not limiting                           in the grey water BMP bottles and increase the quantity of latrine
+CH4 production. In BMP4, bottles were prepared with and without                           substrate in the latrine BMP bottles (Table 1).
+media to determine the effect of media on CH4 production with
+latrine waste.
+    Before incubation, the BMP bottles were ﬂushed with 70:30                             2.4. Calculations of methane potential for the full-scale AD design
+N2:CO2 to ensure anaerobic conditions. Biogas volume was
+measured volumetrically using a glass, gas-tight syringe equili-                             The PIH AD system design process began with clicker counts of
+brated to atmospheric pressure. Biogas samples were analyzed for                          potential latrine users at the PIH complex over a 3-week period
+CH4 composition using a HP 5890 Series II Plus gas chromatography                         from sunrise to sundown to determine: 1) the number of users
+(GC) with ﬂame ionization detector (FID), with an injection tem-                          entering each existing latrine, and 2) the number of potential users
+perature of 200  C, a detector temperature of 250  C, and helium as                     forgoing the latrine for open defecation in the immediate area. The
+the carrier gas at a ﬂow rate of 300 ml/min. Biogas production and                        results showed a daily average of 209 potential users (ranging from
+CH4 content were measured daily during the ﬁrst week of the                               120 to 351) at the outpatient latrine site, but only 38% actually used
+experiment, approximately every other day the following week,                             the latrine facilities with the remaining practicing open defecation.
+and then bi-weekly for the remainder of the experiment, with                              To account for daily variation, wastewater ﬂows were estimated for
+measurement frequency based on the quantity of biogas produced.                           50e500 daily uses, with an assumed 50% reduction on weekends
+    To account for biogas production from residual degradable                             based on reductions in stafﬁng and patient population. It was
+matter in the digester inoculum, triplicate control bottles                               assumed that the same person could be a user multiple times, and
+
+
+Table 1
+The inoculum-substrate ratio (ISR) and cumulative CH4 production for the four BMP tests are shown normalized by volatile solids (g VS added) and volumetric loading (ml of
+substrate). Values are given as averages of triplicate BMP bottles ± standard error, with cumulative CH4 from the inoculum previously subtracted from each treatment.
+
+ Substrate source        ISR ratio (volume)        ISR ratio (VS)        Cumulative CH4 (ml ml1 substrate)             Cumulative CH4 (ml g1 VS added)    CH4 (%)
+
+ BMP1
+ Latrine 1               6:1                       1:2                   7.5 ± 0.8                                      99.3 ± 10.4                         46.2 ± 1.0
+ GW 1                    1:25                      2:1                   0.02 ± 0.0003                                  38.6 ± 0.7                          22.7 ± 0.7
+ Manure                  5:1                       1:3                   16.6 ± 0.2                                     151 ± 2                             56.3 ± 0.4
+ BMP2
+ Latrine 2               4:1                       1:4                   21.3 ± 2.0                                     137 ± 17                            68.5 ± 1.2
+ GW 2                    1:2                       2:1                   0.5 ± 0.2                                      52.7 ± 18.4                         28.0 ± 3.2
+ GW 3                    1:2                       10:1                  < 0.001                                        52.9 ± 5.5                          1.0 ± 0.1
+ BMP3
+ Latrine 1               2:1                       1:2                   11.6 ± 0.1                                     79.1 ± 0.5                          67.6   ±   0.4
+ Latrine 2               2:1                       1:3                   9.3 ± 0.6                                      43.4 ± 2.7                          66.9   ±   0.4
+ GW 2                    1:2                       1:1                   < 0.01                                         < 0.001                             68.8   ±   0.3
+ GW 4                    1:2                       1:1                   < 0.01                                         < 0.001                             67.8   ±   0.4
+ BMP4
+ Latrine 1               9:1                       1:1                   18.5 ± 0.1                                     136 ± 1                             65.4 ± 0.7
+ Latrine 1*              9:1                       1:1                   17.8 ± 1.1                                     131 ± 8                             64.8 ± 0.6
+ Septage                 1:1                       1:1                   0.6 ± 0.1                                      35.6 ± 4.3                          55.6 ± 0.5
+ Septage*                1:1                       1:1                   0.4 ± 0.01                                     22.7 ± 0.5                          52.6 ± 0.6
+ GW 3                    1:57                      1:1                   < 0.001                                        1.7 ± 1.0                           5.0 ± 0.6
+ Average values
+ Latrine                 e                         e                     13.6 ± 2.1                                     99.0 ± 16.6                         62.9 ± 4.2
+ Septage                 e                         e                     0.58 ± 0.1                                     35.6 ± 4.3                          55.6 ± 0.5
+ GW                      e                         e                     0.09 ± 0.07                                    24.3 ± 4.2                          32.2 ± 12.1
+
+* Indicates no nutrient media was added to these triplicate bottles. GW ¼ grey water.
+                                                S. Lansing et al. / Biomass and Bioenergy 91 (2016) 288e295                                                        291
+
+
+therefore the number of users per day was expected to be ﬁve times
+higher than the patient and staff population.
+    Waste composition and production for PIH were estimated us-
+ing a per capita daily waste production of 1.2 L of urine and 520 g
+(wet weight) of fecal matter based on Polprasert [24], which
+accounted for dietary and cultural factors affecting human waste in
+the developing world. The density and moisture content of fecal
+matter was estimated to be 1.4 g/cm3 and 83%, respectively [25].
+The daily waste production rate per capita was divided into ﬁve
+latrine uses per day, consisting of three urinations and two defe-
+cations, in order to determine wastewater content on a ‘per use’
+basis.
+    Daily wastewater production was estimated for several waste
+conveyance strategies: (1) digestion of latrine waste in-vessel with
+no conveyance water; (2) bucket ﬂush (0.5 L of conveyance water);
+(3) low ﬂush toilets (4 L of conveyance water); and (4) low ﬂush
+toilets (4 L) with urinal waste diverted from the AD system. The AD
+system size was calculated for each wastewater scenario using a 47-
+day retention time, and potential CH4 production was calculated
+using values derived from the BMP testing.
+
+2.5. PIH anaerobic digestion (AD) full-scale design and testing
+
+    Due to the preferences of the managers on-site the AD system
+for the PIH outpatient clinic was designed with low-ﬂush toilets
+(4 L of conveyance water), with the black water conveyed to a
+three-cell, 36 m3 AD system with post-treatment subsurface wet-                 Fig. 1. The PIH anaerobic digestion system with latrine building, 3 cell AD system, and
+lands (28.4 m3). Each digester has a liquid phase of 12 m3, with                post-treatment wetlands. Photo taken prior to wetland planting.
+10 m3 of combined gas space within the three-cell AD system. The
+wetland has gravel substrate with a void volume of 0.5, creating an
+effective treatment volume of 14.2 m3. The urinal waste and sink                were not signiﬁcantly different from the grey water (p-value > 0.9),
+grey water were conveyed in accordance with the DESAR concept,                  likely due to the addition of hospital grey water to the septage pit,
+proceeding directly to the post-treatment wetlands (wastewater                  resulting in dilution of the septage waste. The average pH of the
+conveyance strategy #4 above), in order to reduce ﬂush water and                latrine, grey water and septage were 7.61, 7.51, and 7.19, which is
+nitrogen concentration in the digestion system and provide more                 within the ideal range (7e8) for CH4 production.
+appropriate treatment of the black water and grey water waste                       The organic matter concentration correlated with cumulative
+streams (Fig. 1).                                                               CH4 production from the BMP experiments when normalized on a
+    The AD system began receiving black water in October 2013,                  volumetric basis (Tables 1 and 2; Fig. 2A). The average cumulative
+with dairy manure used as the inoculum source to increase biogas                CH4 production for the latrine waste for all four BMPs was
+production during the start-up phase. Samples were collected from               13.6 ml ml1 substrate, which was 23 times greater than the
+the full-scale system over seven sampling events during a seven                 septage pit (0.58 ml ml1 substrate), and 151 times greater than the
+month period beginning in April 2014, with samples analyzed both                grey water (0.09 ml ml1 substrate). These results were expected
+                          Quisqueya laboratory and in the USA at the
+in Haiti at the Universite                                                      when normalizing CH4 production by waste volume, but higher
+University of Maryland Water Quality Laboratory, using standard                 than the differences in the VS concentration would imply, with the
+methods for total coliforms, fecal coliforms, pH, alkalinity, COD, TS,          latrine sludge having only 11 and 20 times more VS than the
+and VS [21]. Biogas production was measured with a low-ﬂow gas                  septage pit and grey water, respectively. The average CH4 produc-
+meter (EKM ¾” Pulse Output Gas Meter, Santa Cruz, CA, USA) and                  tion values for the grey water (0.09 ml ml1 substrate) were similar
+CH4 and H2S were measured on-site with a Biogas 5000 meter                      to average CH4 production from traditional sewage input from
+(LANDTEC, Colton, CA, USA).                                                     industrialized countries (0.13 ml ml1 substrate), which is more
+                                                                                dilute (0.8 g L1 COD) to the wastewater sources in this study due to
+3. Results and discussion                                                       decreased water use in a resource limited setting, like Haiti [8]. The
+                                                                                latrine CH4 production values were almost exactly two orders of
+3.1. Biochemical methane potential (BMP) experiments                            magnitude greater on a volumetric basis (13.6 ml ml1 substrate)
+                                                                                compared to traditional sewage input due to the concentration of
+   The latrine waste and dairy manure used in the BMPs were not                 organic matter in the latrine waste.
+signiﬁcantly different from each other in TS, VS and COD concen-                    The BMP results were also normalized to the quantity of VS
+trations, highlighting the high organic matter content and biogas               added to each bottle (Table 1; Fig. 2B). This normalization describes
+potential of both latrine waste and dairy manure, with dairy                    the efﬁciency in converting the carbonaceous material present in
+manure being the more traditional AD input in the developing                    the digestion vessel into CH4. When normalized by VS, the average
+world. The VS and COD concentrations of the latrine waste (133 and              CH4 cumulative production from the latrine waste (99.0 ml g1 VS)
+456 g L1, respectively) and dairy manure (110 and 558 g L1,                   was almost three times higher than the septage (35.6 ml g1 VS)
+respectively) were an order of magnitude greater than the septage               and four times higher than the grey water (24.3 ml g1 VS). Cu-
+(12.3 and 12.8 g L1, respectively) and two orders greater than the             mulative CH4 results for each individual BMP, with Tukey-Kramer
+grey water (6.8 and 3.3 g L1, respectively) (Table 2) (p-                      statistical differences after 30, 47, and 70 days of digestion, are
+value < 0.001). The COD, TS and VS concentrations of the septage                shown in Table 3.
+292                                                                                      S. Lansing et al. / Biomass and Bioenergy 91 (2016) 288e295
+
+Table 2
+Characterization of the Haiti hospital complex waste sources for total solids (TS), volatile solids (VS), chemical oxygen demand (COD), and percent solids. Lower case letters
+represent signiﬁcant differences from ANOVA and Tukey-Kramer analyses between substrates (within columns). Values are given as averages ± standard error.
+
+  Substrate                                                                            TS (g/L)                            VS (g/L)                    COD (g/L)                   Solids (%)
+
+  Latrines                                                                             167 ± 17a                           133 ± 13a                   456 ± 79a                   16.3 ± 1.6a
+  Hospital septage                                                                     16.3 ± 6.7b                         12.3 ± 4.2b                 12.8 ± 5.0b                 1.6 ± 0.3b
+  Grey water                                                                           11.7 ± 3.1c                         6.8 ± 2.4b                  3.3 ± 0.5b                  1.0 ± 0.3b
+  Dairy manure                                                                         145 ± 3a                            110 ± 7a                    558 ± 7a                    15.0 ± 0.3a
+  Dairy digester inoculum                                                              15.9 ± 2.7bc                        9.2 ± 2.1b                  22.3 ± 2.8b                 1.7 ± 0.2b
+  Wastewater digester inoculum                                                         23.5 ± 0.2b                         15.9 ± 0.2b                 23.0 ± 0.2b                 2.4 ± 0.01b
+
+
+
+
+    While the grey water sources in BMPs produced approximately                                                          not shown (data not shown). If grey water were directed to the
+one-third of the CH4 production of the latrine wastes on a per gram                                                      digester, further testing would be needed to determine if the con-
+VS basis, due to the dilute nature of the grey water, an AD would                                                        centration of contaminants, such as antibiotics and iodine, in the
+need 151 times more substrate, and thus 151 times the AD volume,                                                         hospital grey water could be inhibitory to digestion over time.
+to achieve similar CH4 production levels to a latrine-based AD.                                                              The asymptotes in the cumulative CH4 production (Fig. 2)
+Based on the low VS concentration in the grey water and the low                                                          showed that the waste sources should be digested for at least 30
+CH4 production, with no CH4 production from the grey water in                                                            days to capture the majority of the CH4 production potential. The
+BMP3, it was determined that the grey water would be more                                                                lowest and highest CH4 producing latrine waste sources (latrine
+effectively treated directly in post-treatment wetlands. Li et al. [26]                                                  waste in BMP1 and BMP2, respectively) produced an average of
+stated in their review of grey treatment that constructed wetlands                                                       0.25 and 0.57 ml ml1 substrate day1, respectively, during the ﬁrst
+are considered one of the most environmentally friendly and cost-                                                        30 days of digestion. In BMP4, 90% of the CH4 production from the
+effective technologies for grey water treatment. The lower CH4                                                           latrine waste and 80% from the septage pit CH4 was produced by
+production efﬁciencies of the grey water and septage pit in BMP3                                                         Day 30, resulting in average CH4 production rates during the ﬁrst 30
+could be due to bacteriocidal agents, such as iodine, in the grey                                                        days of digestion of 0.55 and 0.015 ml ml1 substrate day1,
+water from the hospital operating room. An anaerobic toxicity                                                            respectively. In BMP2 and BMP3, the latrine waste produced 81%
+assay (ATA) was conducted on the septage, and direct toxicity was                                                        and 93% of total CH4 production by Day 30, and 94% and 97% by Day
+                                                                                                                         47, respectively.
+                                                                                                                             While there were two types of inoculum used in the BMPs ex-
+                                    Latrine 1 (BMP 1)    Latrine 2 (BMP 2)    Latrine 2 (BMP 3)   Latrine 1 (BMP 3)      periments, dairy manure digestate for BMPs 1e3 and municipal
+                                    Latrine 1 (BMP 4)    Grey W2 (BMP 2)      Septage (BMP 4)     Manure (BMP1)
+                           25                                                                                            wastewater digestate for BMP4, there was not a signiﬁcant inoc-
+                                                                                                                         ulum source effect in the 30-day cumulative CH4 production (p-
+                                                                                                                         value ¼ 1.0). The largest CH4 potential from the latrine waste was
+                           20
+                                                                                                                         observed in BMP2 and the lowest in BMP1, both of which had dairy
+   ml CH4 ml-1 substrate
+
+
+
+
+                                                                                                                         manure digestate as the inoculum source (Table 3). The ISR also did
+                           15                                                                                            not show a signiﬁcant effect on CH4 production, with no signiﬁcant
+                                                                                                                         differences between cumulative CH4 production from the latrine
+                           10                                                                                            waste with the highest ISR value (1:1 in BMP4: 18.5 ml ml1 sub-
+                                                                                                                         strate and 136 ml g1 VS), and the lowest ISR value (1:4 in BMP2:
+                                                                                                                         21.0 ml ml1 substrate and 137 ml g1 VS), which had the highest
+                            5
+                                                                                                                         CH4 production levels (on a VS basis) of all latrine waste sources.
+                                                                                                                         The ability of latrine-based digesters to produce high quantities of
+                            0                                                                                            CH4 with dairy digestate at lower, non-limiting ISRs is promising for
+                                0          10           20        30          40          50        60          70       a resource-limited setting like Haiti. Dairy manure was not statis-
+                                                                       Days                                              tically different in TS, COD and VS concentrations from the latrine
+                                    Latrine 1 (BMP 1)    Latrine 2 (BMP 2)    Latrine 2 (BMP 3)   Latrine 1 (BMP 3)      waste, nor was there a statistical difference in CH4 production be-
+                                    Latrine 1 (BMP 4)    Manure (BMP1)        Grey W2 (BMP 2)     Septage (BMP 4)        tween dairy manure and the latrine waste results for BMPs 2 and 4
+                       160
+                                                                                                                         (Table 3; p-value ¼ 0.22). Dairy manure has been used successfully
+                       140                                                                                               digested in the small-scale AD systems throughout the world, and
+                       120                                                                                               these results show that latrine waste could also be used as a viable
+                                                                                                                         substrate in small-scale AD.
+   ml CH4 g-1 VS
+
+
+
+
+                       100                                                                                                   Standard BMP nutrient media was used in each BMP, except in
+                           80                                                                                            BMP4 where the latrine and septage substrates were digested with
+                                                                                                                         and without media to determine if the additional nutrients and
+                           60
+                                                                                                                         alkalinity in the media were needed for digestion. There was a 3.9%
+                           40                                                                                            decrease in cumulative CH4 when the latrine waste was digested
+                                                                                                                         without media, however this decrease was not statistically signif-
+                           20
+                                                                                                                         icant, (17.8 and 18.5 ml ml1 substrate respectively; p-
+                            0                                                                                            value ¼ 0.58). There was a signiﬁcant effect when the septage pit
+                                0          10           20        30          40          50        60          70
+                                                                                                                         was digested without media (0.4 and 0.6 ml ml1 substrate,
+                                                                       Days
+                                                                                                                         respectively; p-value ¼ 0.049), likely due to possible toxins or the
+Fig. 2. Biochemical Methane Potential (BMP) results normalized by volume (ml CH4/                                        lack of micronutrients in the dilute wastewater resulting in a
+ml substrate) and volatile solids (ml CH4/g VS) for latrine, septage and grey water. Only                                decrease in methanogenic activity. These ﬁndings are consistent
+Grey W2 is shown, as all other grey water sources had negligible CH4 production.                                         with the hypothesis that digestion of hospital septage, which was
+                                                           S. Lansing et al. / Biomass and Bioenergy 91 (2016) 288e295                                                    293
+
+Table 3
+Cumulative CH4 production for the four BMPs normalized by volume (ml ml1 substrate) and volatile solids (ml g1 VS added), utilizing percent CH4 data from Day 10 to the
+end of each experiment. Lower case letters represent signiﬁcant differences within each column. Average values for each date ranges include all BMP values (BMP1 results
+included in average for Days 0e47 and Days 0e66 and BMP4 for Days 0e66).
+
+ Substrate                        Cumulative CH4 (ml ml1 substrate)                                           Cumulative CH4 (ml g1 vs added)
+
+                                  Days 0e30                      Days 0e47             Days 0e66               Days 0e30              Days 0e47                Days 0e66
+
+ BMP1: Latrine 1                  7.5 ± 0.8a                     e                     e                       99.3 ± 10.4ac          e                        e
+ BMP1: Dairy Manure               16.6 ± 0.2bc                   e                     e                       151 ± 2b               e                        e
+ BMP1: Grey Water 1               0.02 ± 0.0003de                e                     e                       38.6 ± 0.7cd           e                        e
+ BMP2: Latrine 2                  17.1 ± 1.6b                    19.7 ± 2.0a           21.0 ± 1.0a             123 ± 11ab             127 ± 13a                137 ± 17a
+ BMP2: Grey Water 2               0.5 ± 0.6d                     0.5 ± 0.2b            0.5 ± 0.2bc             50.5 ± 17.7cd          50.5 ± 17.7bc            52.7 ± 18.4b
+ BMP2: Grey Water 3               <0.001d                        <0.001b               <0.001b                 52.7 ± 5.5cf           52.9 ± 5.5b              52.9 ± 5.5b
+ BMP3: Latrine 1                  10.6 ± 0.008a                  11.2 ± 0.08c          11.6 ± 0.1ad            72.3 ± 3.2adf          76.6 ± 0.3ac             79.1 ± 0.5ab
+ BMP3: Latrine 2                  8.8 ± 0.7a                     9.0 ± 0.6c            9.3 ± 0.6cd             41.0 ± 0.1cd           42.1 ± 2.7bc             43.4 ± 2.7b
+ BMP3: Grey Water 2               <0.001d                        <0.001b               <0.001b                 <0.001e                <0.001d                  <0.001c
+ BMP3: Grey Water 4               <0.001d                        <0.001b               <0.001b                 <0.001e                <0.001d                  <0.001c
+ BMP4: Latrine 1                  16.6 ± 0.02c                   18.5 ± 0.1a           e                       122 ± 0.2ab            136 ± 1a                 e
+ BMP4: Grey Water 3               <0.001d                        <0.001b               e                       1.7 ± 1.0e             1.7 ± 1.0d               e
+ BMP4: H. Septage                 0.46 ± 0.03d                   0.58 ± 0.1b           e                       28.4 ± 1.8cde          35.6 ± 4.3bd             e
+ Latrine Avg.                     12.1 ± 1.2                     13.2 ± 1.3            13.6 ± 2.1              91.5 ± 8.1             96.2 ± 10.9              99.0 ± 16.6
+ Grey Water Avg.                  0.09 ± 0.07                    0.09 ± 0.07           0.09 ± 0.07             23.9 ± 4.2             24.0 ± 4.2               24.3 ± 4.3
+
+
+
+
+mixed with hospital grey water, may present signiﬁcant challenges                              Based on BMP results and the sanitation preferences at the PIH
+that were not inherently found in digesting only latrine waste.                            complex, four low ﬂush toilets (4L per ﬂush) were piped directly to
+                                                                                           a 36 m3 AD system digester, with waste from one urinal and grey
+                                                                                           water from one communal sink routed directly the post-treatment
+3.2. Calculated methane potentials for the full-scale AD design                            wetland (Fig. 1). With the 4L ﬂush volume, the expected COD value
+                                                                                           of the digester inﬂuent (114 g L1) was 20% greater than the black
+    The quantity of fecal matter and total volume entering the AD                          water value of Kujawa-Roeleveld et al. [16] at 90 g L1, which had
+for the four wastewater conveyance strategies were calculated                              vacuum toilet black water entering an AD. The calculated raw feces
+based on the number of users and a 47-day retention time (Table 4).                        COD value of 550 g L1 was 18% greater than the average latrine
+A 47-day retention time was chosen based on the BMP results,                               COD concentration for the waste used in the BMPs (456 g L1).
+which showed an average increase in cumulative CH4 production                                  The expected grey water and urinal volume to the wetlands was
+from latrine waste of 10% when extending the 30e47 days, but only                          calculated to range from 0.31 m3 day1 (50 users) to 3.13 m3 day1
+a 4% increase in CH4 production with an additional 19 days of                              (500 users) based on 2 L of grey water per user, resulting in a
+digestion (Day 47 to Day 66). The calculated CH4 production values                         wetland loading rate of 0.024e0.24 kg COD m3 day1, which is
+for a full-scale AD system were determined based on the highest                            below typical COD loadings for tropical treatment wetlands
+(BMP2: 21.3 ml ml1 substrate) and lowest (BMP1: 7.5 ml ml1                               (1.0e2.8 kg COD m3 day1) [27], allowing for the additional ex-
+substrate) latrine CH4 production results (Table 4). The size of the                       pected COD input from the treated digester efﬂuent
+digester needed for the four waste conveyance strategies varied                            (0.015e0.13 kg COD m3 day1) to also be effectively treated in the
+from 1.2 m3 (50 people with no conveyance water) to 92.4 m3 (500                           wetland system. While grey water has been documented to contain
+people with low ﬂush toilets). The predicted CH4 potential                                 a signiﬁcant amount of the COD in domestic wastewater (41%)
+increased with number of users, ranging from 0.06 m3 day1 with                            [18,28], the grey water at the Cange digestion system comes only
+50 users and the lowest CH4 production value to 1.7 m3 day1 with                          from hand washing, and will likely contain less COD than complex
+500 users and the highest CH4 production value. Utilizing the                              grey water, which includes kitchen and laundry grey water sources.
+average percent CH4 of the latrine waste BMPs (62.9%), the calcu-
+lated quantity of biogas produced ranged from 0.1 to 2.7 m3 day1
+with 50 and 500 users day1, respectively. Assuming 5 uses                                 3.3. Treatment results from full-scale sanitary digester
+person1 day1 and using the highest latrine BMP CH4 production
+results, the average CH4 production was calculated to be                                      The biogas production from the operational PIH digestion sys-
+0.017 m3 person1 day1 (0.003 m3 user1 day1). This estimate is                          tem averaged 0.108 m3 day1, with an average of 65.4% CH4 in the
+comparable to a previous study, which found low-tech digestion                             biogas (618 ppm H2S); the CH4 production averaged
+systems with black water mixed with kitchen waste to have CH4                              0.071 m3 day1. The average usage of the toilets during this period
+production values of 0.02 m3 person1 day1 [20].                                          was only 31 uses day1, resulting in a CH4 production value of
+
+
+Table 4
+Calculated CH4 production values based on the highest (H) latrine CH4 production (BMP2: 21.3 ml ml1 substrate) digested for 47 days and the lowest (L) latrine CH4 production
+(BMP1: 7.5 ml ml1 substrate) digested for 30 days. The size of digester (m3) needed for 50e500 potential users is presented for each waste conveyance scenario based on a 47-
+day hydraulic retention time (HRT).
+
+ Number of        Total fecal matter        Calculated CH4            Latrine (no     Latrine (0.5 L bucket      Low ﬂow toilets   Low ﬂow toilets (4 L) with urinal
+ users            (m3 d1)                  (m3 d1)                  ﬂush)           ﬂush)                      (4 L)             diversion
+
+                                                                      Digester size (m3) for 47 day HRT
+ 50               0.06                      H:   0.17; L: 0.06        1.2              2.4                        9.2               6.3
+ 100              0.016                     H:   0.34; L: 0.12        2.4              4.8                       18.5              12.5
+ 300              0.048                     H:   1.0; L: 0.36         7.1             14.3                       55.4              37.5
+ 500              0.080                     H:   1.7; L: 0.60         11.8            23.9                       92.4              62.6
+294                                                     S. Lansing et al. / Biomass and Bioenergy 91 (2016) 288e295
+
+Table 5
+Wastewater characteristics for the full-scale AD System at PIH over a seven-month sampling period. Values are given as averages ± standard error.
+
+                       TSa (g L1)      VSb (g L1)   CODc (g L1)       Total coliforms        E. coli               Alkalinity         pH               Temperature
+                                                                         (CFUd 100 mL1)        (CFUd 100 mL1)       (g CaCO3 L1)                       ( C)
+
+    AD Inﬂuent         5.02 ± 1.01      4.21 ± 0.91   6.11 ± 0.85        11,000 ± 1470          2770 ± 567            0.260 ± 0.040      6.99 ± 0.16      29.4 ± 0.6
+    AD Efﬂuent         0.33 ± 0.02      0.17 ± 0.03   0.092 ± 0.014      13.2 ± 2.46            1.40 ± 0.19           0.473 ± 0.037      6.84 ± 0.07      29.6 ± 0.2
+    % Reduction        93.4%            96.0%         98.5%              99.9%                  99.95%                81.9%*            2.1%             0.4%*
+*
+    negative values represent % increase.
+    a
+      TS: Total Solids.
+    b
+      VS: Volatile Solids.
+    c
+      COD: Chemical Oxygen Demand.
+    d
+      CFU: Colony Forming Units.
+
+
+
+0.002 m3 use1 day1 (0.011 m3 person1 day1 based on 5 uses per                       average efﬂuent temperature of 29.6  C, which closely approxi-
+person in one day), which was 35% lower than the calculated CH4                         mated the ambient temperature in Cange with mean January and
+value     from      the    highest     performing      latrine   BMP                    August temperatures of 27.1  C and 29.7  C, respectively [31]. While
+(0.017 m3 person1 day1), but 46% higher than the calculated CH4                       pathogens were not eliminated, the VS and COD concentrations
+value from the lowest performing BMP (0.006 m3 person1 day1).                         decreased by 96.0 and 98.5%, respectively, during digestion
+Based on the VS and volumetric loading of the full-scale system, the                    (Table 5). The COD concentrations were much less than predicted,
+CH4 production was 16% higher than the average latrine BMPs                             likely due to the decreased amount of users (6.1 g L1) There was an
+(118 ml g1 VS added), likely due to the more efﬁcient digestion                        89.1% increase in alkalinity, but the efﬂuent pH (6.84) remained
+process in a continuous system compared to the batch BMPs, but                          within the circumneutral pH range needed for effective CH4
+96% lower on a volumetric basis (0.50 ml ml1 substrate) due to the                     production.
+large volume of ﬂush water (4L) compared to the calculated sani-
+tary waste expected (0.59 L) on a per use basis and lower inﬂuent                       4. Conclusions
+COD value (6.11 g L1).
+    The PIH CH4 production levels should increase as the number of                         This research illustrated the larger methane potential when
+users increase. The number of users averaged 31 users per day for                       sanitary waste was source separated using the DESAR concept for
+the ﬁrst 8 months, but is expected to increase to 500 users per day                     more appropriate treatment of each waste stream. The full-scale
+with black water from the school low ﬂush toilets plumbed into the                      digestion CH4 production was within the range of CH4 production
+digestion system beginning in March 2015. Increasing user                               values predicted from the BMPs, conﬁrming the ability of the BMPs
+numbers as well as adding even small amounts of kitchen food                            to act as a prediction tool for full-scale digestion. While pathogen
+waste to the digestion system should increase CH4 production [32].                      elimination was not achieved in the full-scale system, there was a
+Food waste addition will be considered once the full-scale system                       99.9% reduction in pathogens, 98.5% reduction in COD, and 0.1 m3 of
+stabilizes from the increased loading from the additional users.                        biogas produced per day, with only 31 uses per day. As the number
+Kujawa-Roeleveld et al. [16] showed that by separating urine and                        of users increases, there is a need for the on-going long-term
+only including black water and kitchen waste in the AD systems,                         monitoring of the full-scale system to determine how the increased
+CH4 production rose 48% to 0.036 m3 person1 day1 with urine                           usage will affect biogas production and treatment efﬁcacy.
+diversion, likely due to less NH4-N inhibition with urine diversion;
+a motivating factor for urine diversion in our ﬁnal digestion system.                   Acknowledgements
+    The average NH4-N concentration in the full-scale system was
+0.16 g NH4-N L1, which was 89% lower than the latrine waste in                             This material is based upon work supported by the National
+BMP4 (1.52 ± 0.04 g NH4-N L1). Sakar et al. [33] stated that                           Science Foundation (#1034836), the Bill and Melinda Gates Foun-
+ammonium ions are tolerated up to 1.5 g/L as NH4-N, with CH4                            dation (#OPP1034758), and USAID-Haiti (#521-A-13-00008). Spe-
+inhibition with NH4-N concentrations above 4.9 g/L and 100% in-                         cial appreciation is given to Father Lafontant, Marie-Flore
+hibition above 8 g/L. Ammonium toxicity can likely be avoided if                        Lafontant, and Lukenson Berno at Zanmi Lasante, Gillaine Warne,
+optimal digester pH is maintained (6.8e7.2) and the ammonium-                           Harold Morse, David Vaughn and Kip Duchon from the Episcopal
+nitrogen concentration remains below 1.5e3 g L1 [34,35], both                          Diocese of Upper South Carolina, Clemson Engineers for Developing
+of which were maintained in the full-scale PIH digestion system.                        Countries (David Waters, Samuel Knobeloch; Brian Graham, Colby
+    In addition, high pathogen removal rates were shown at the PIH                      Cash, Rachel Weber), UMD Capstone students in ENST (Parise
+digesters, with 99.9 and 99.95% reduction in total coliforms and                        Henry, Helen Lee, Sean Maley, Timothy Mayer, and Christine
+Escherichia coli, respectively. Previous studies have also shown 99%                    Wertz), and Rachel Smith from Biobolsa-Mexico.
+and 97% reductions in total coliforms and Escherichia coli, respec-
+tively, with Taiwanese-model digester operated at 25  C using a 40-                    References
+day retention time [29]. Kumar et al. [30] observed that when
+digesting cow manure Escherichia coli and Salmonella typhi survived                      [1] WHO, Progress on Drinking Water and Sanitatione2014 Update, World
+                                                                                             Health Organization and UNICEF, 2014. ISBN: 978-92-4-1507240, http://
+up to 20 days at 18e25  C and 10 days at 35  C, Shigella dysenteriae                       www.unwater.org/publications/publications-detail/en/c/231531.            Last
+survived up to 10 and 5 days, respectively, and Streptococcus faecalis                       Accessed 17.02.2015.
+survived the longest: 35 days at 18e25  C and 15 days at 35  C.                        [2] N.J. Ashbolt, Microbial contamination of drinking water and disease outcomes
+                                                                                             in developing regions, Toxicology 198 (1e3) (2004) 229e238.
+While 100% elimination was not achieved in the PIH system, E. coli
+                                                                                         [3] MSPP, Rapport Cholera 28 Fevrier 2015 (Cholera Report 28 February 2015),
+levels of 1.40 CFU 100 ml1 were achieved in the efﬂuent, which is                           Ministere de la Sante Publique et de la Population (MSPP), 2015. http://mspp.
+less than the criteria for bathing waters in the US. The digesters                           gouv.ht/site/downloads/Rapport%20Web%2028.02_Avec_Courbes_
+                                                                                             departementales.pdf. Last Accessed 18.03.15.
+were not heated but were constructed using black geomembrane
+                                                                                         [4] L.R. Mitchel, J. Gu, Environmental Microbiology, second ed., John Wiley &
+bags in order to absorb additional solar heat. The digesters had an                          Sons, Inc, New Jersey, 2010.
+                                                                                         [5] IADB, Inter-american development bank: Haiti, in: Water and sanitation for
+                                                            S. Lansing et al. / Biomass and Bioenergy 91 (2016) 288e295                                                         295
+
+     intermediate cities (II) (HA-L1039) / (HA-X1013), 2009.                                [20] A.W.W.A. APHA, WEF. Standard Methods for the Examination of Water and
+ [6] W. Delice, R. Van der Plas, J. Altidor, J.C. Jean, E. Jeanniton, B. Pierre, Haiti:          Wastewater, twenty-ﬁrst ed., American Public Health Association, New York,
+     Strategy to Alleviate the Pressure of Fuel Demand on National Woodfuel Re-                  2005.
+     sources, The World Bank’s Energy Sector Management Assistance Program,                 [21] W. Owen, D. Stuckey, J. Healy Jr., L. Young, P. McCarty, Bioassay for monitoring
+     Washington, D.C, 2007.                                                                      biochemical methane potential and anaerobic toxicity, Water Res. 13 (6)
+ [7] K. Rabeay, W. Verstraete, Microbial fuel cells: novel biotechnology for energy              (1979) 485e492.
+     generation, Trends Biotechnol. 23 (6) (2005) 291e298.                                  [22] ASTM, E1196e92 Standard Test Method for Determining the Anaerobic
+ [8] M. Berglund, P. Bo€rjesson, Assessment of energy performance in the life-cycle              Biodegradation Potential of Organic Chemicals, American Society for Testing
+     of biogas production, Biomass Bioenerg. 30 (2006) 254e266.                                  and Materials, West Conshohocken, PA, 1992.
+ [9] P.N. Hobson, The treatment of agricultural waste, in: A. Wheatley (Ed.),               [23] L.B. Moody, R.T. Burns, G. Bishop, S.T. Sell, R. Spajic, Using biochemical
+     Anaerobic Digestion: a Waste Treatment Technology. Critical Reports on                      methane potential assays to aid in co-substrate selection for co-digestion,
+     Applied Chemistry, 31, 1990, pp. 93e138.                                                    Appl. Eng. Agric. 27 (3) (2011) 433e439.
+[10] S. Lansing, R.B. Botero, J.F. Martin, Wastewater treatment and biogas pro-             [24] C. Polprasert, Organic Waste Recycling: Technology and Management, IWA
+     duction in small-scale agricultural digesters, Bioresour. Technol. 99 (2008a)               Publishing Alliance House, London, UK, 2007.
+     5881e5890.                                                                             [25] P.S. Shetty, A.V. Kurpad, Increasing starch intake in the human diet increases
+[11] USEPA, Market opportunities for biogas recovery systems: a guide to identi-                 fecal bulking, Am. J. Clin. Nut 43 (1986) 210e212.
+     fying candidates for on-farm and centralized systems, in: AgSTAR Program:              [26] F. Li, K. Wichmann, R. Otterpohl, Review of the technological approaches for
+     USEPA, USDA, and DOE Energy and Pollution Prevention, 2006. EPA-430-8-                      grey water treatment and reuses, Sci. Total Environ. 407 (11) (2009)
+     06-004.                                                                                     3439e3449.
+[12] S. Lansing, J. Víquez, H. Martínez, R. Botero, J. Martin, Optimizing electricity       [27] A.K. Kivaisi, The potential for constructed wetlands for wastewater treatment
+     generation and waste transformations in a low-cost, plug-ﬂow anaerobic                      and reuse in developing countries: a review, Ecol. Eng. 16 (4) (2001) 545e560.
+     digestion system, Ecol. Eng. 34 (2008b) 332e348.                                       [28] R. Otterpohl, U. Braun, M. Oldenburg, Innovative technologies for decentral-
+[13] I. Ferrer, M. Garfí, E. Uggetti, L. Ferrer-Martí, A. Calderon, E. Velo, Biogas              ised water, wastewater and biowaste management in urban and peri-urban
+     production in low-cost household digesters at the Peruvian Andes, Biomass                   areas, Water Sci. Tech. 48 (11/12) (2003) 23e32.
+     Bioenerg. 35 (5) (2011) 1668e1674.                                                     [29] S. Lansing, J. Martin, R. Botero, T. Nogueira da Silva, E. Dias da Silva, Waste-
+[14] R. Botero, T.R. Preston, Low Cost Biodigesters for the Production of Fuel and               water transformations and fertilizer value when co-digesting differing ratios
+     Fertilizer from Animal Excreta: Manual for Installation, Operation, and Utili-              of swine manure and used cooking grease in low-cost digesters, Biomass
+     zation, Centro para la Investigatio n en Sistemas Sostenibles de Produccio    n           Bioenerg. 34 (2010) 1711e1720.
+     Agropecuaria, Cali, Colombia, 1987.                                                    [30] R. Kumar, M.K. Gupta, S.S. Kanwar, Fate of bacterial pathogens in cattle dung
+[15] S. Luostarinen, W. Sanders, K. Kujawa-Roeleveld, G. Zeeman, Effect of tem-                  slurry subjected to anaerobic digestion, World J. Microbiol. Biotechnol. 15 (3)
+     perature on anaerobic treatment of black water in UASB-septic systems,                      (1999) 335e338.
+     Biores. Technol. 98 (2007) 980e986.                                                    [31] NOAA, Surface Data, Hourly Global: SummariesePort-Au-Prince, 2011, http://
+[16] K. Kujawa-Roeleveld, T. Elmitwalli, A. Gaillard, M. van Leeuwen, G. Zeeman,                 www7.ncdc.noaa.gov/climvis/CdoBatch. Accessed 11.12.2013.
+     Co-digestion of concentrated black water and kitchen refuse in an accumu-              [32] M.S. Lisboa, S. Lansing, Characterizing food waste substrates for co-digestion
+     lation system within the DESAR (decentralized sanitation and reuse) concept,                through biochemical methane potential (BMP) experiments, Waste Manage
+     Water Sci. Tech. 48 (4) (2003) 121e128.                                                     33 (12) (2013) 2664e2669.
+[17] R. Otterpohl, Design of highly efﬁcient source control sanitation and practical        [33] S. Sakar, K. Yetilmezsoy, E. Kocak, Anaerobic digestion technology in poultry
+     experiences, in: P. Lens, G. Zeeman, Lettinga (Eds.), Decentralised Sanitation              and livestock waste treatmentea literature review, Waste Manage Res. 27
+     and Reuse, IWA Publishing, UK, 2001, pp. 164e180.                                           (2009) 3e18.
+[18] T.A. Elmitwalli, Y. Feng, J. Behrendt, R. Otterpohl, Anaerobic digestion po-           [34] M.H. Geradi, The Microbiology of Anaerobic Digesters, John Wiley & Sons, Inc,
+     tential for ecological and decentralized sanitation in urban areas, Water Sci.              New Jersey, 2003.
+     Tech. 53 (9) (2006) 45e54.                                                             [35] M.C. Sterling Jr., R.E. Lacey, C.R. Engler, S.C. Ricke, Effects of ammonia nitrogen
+[19] K. Kujawa-Roeleveld, T. Elmitwalli, G. Zeeman, Enhanced primary treatment                   on H2 and CH4 production during anaerobic digestion of dairy cattle manure,
+     of concentrated black water and kitchen residues within DESAR concept using                 Bioresour. Technol. 77 (2001) 9e18.
+     two types of anaerobic digesters, Water Sci. Tech. 53 (9) (2008) 159e168.
+
