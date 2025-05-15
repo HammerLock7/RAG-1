@@ -101,6 +101,3 @@ if embeddings:
         st.error(f"Unexpected error during vectorstore or retrieval: {e}")
 else:
     st.error("Embedding model failed to load. Please check the console for more info.")
-
-with open("style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
