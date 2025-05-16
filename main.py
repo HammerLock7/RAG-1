@@ -5,7 +5,7 @@ from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain.schema import Document
 from ollama import chat
@@ -53,9 +53,10 @@ def generate_answer(query: str, context: str) -> str:
         messages=[
             {"role": "system", "content": "Answer the question based on the provided context."},
             {"role": "user", "content": f"Context:\n{context}"},
-            {"role": ":user", "content": query}
+            {"role": "user", "content": query}
         ]
     )
+    print ("Raw Response: ", response)
     return response["message"]["content"]
 
 #Web routes
@@ -65,6 +66,14 @@ async def serve_frontend(request: Request):
 
 @app.post("/query")
 async def query(data: Query):
+    print("User question:", data.question)
+
     context = retrieve(data.question)
-    answer=generate_answer(data.question, context)
+    print("Retrieved context:", context[:300], "...") #shows the first 300 characters
+
+    answer = generate_answer(data.question, context)
+    print("Generated answer:", answer)
+
     return {"answer": answer}
+
+
