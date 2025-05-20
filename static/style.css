@@ -1,66 +1,136 @@
- body {
-      background: linear-gradient(to right, #1e3c72, #2a5298);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      overflow: hidden;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-    .main {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-      width: 90%;
-      max-width: 500px;
-      text-align: center;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
 
-    h1 {
-      margin-bottom: 20px;
-      font-size: 32px;
-    }
+.app-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 600px;
+  backdrop-filter: blur(12px);
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
 
-    .title{
-        text-align: center;
-        margin-bottom: 10rem;
-        font-size: 4rem;
-    }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
-    input[type="text"] {
-      padding: 12px;
-      width: 80%;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      margin-bottom: 20px;
-      outline: none;
-      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
-    }
+.app-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
 
-    button {
-      padding: 12px 24px;
-      background-color: #00c9a7;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      color: white;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+.chat-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
 
-    button:hover {
-      background-color: #00b497;
-    }
+input[type="text"] {
+  padding: 14px;
+  width: 70%;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: #333;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
 
-    #answer {
-      margin-top: 20px;
-      font-size: 18px;
-      color: #ffffff;
-      min-height: 60px;
-    }
+input[type="text"]:focus {
+  box-shadow: 0 0 8px rgba(0,201,167,0.8);
+}
+
+button {
+  padding: 14px 22px;
+  background: #00c9a7;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(0,201,167,0.4);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #00b497;
+  transform: scale(1.05);
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 20px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #00c9a7;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loader.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.response-box {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+  min-height: 80px;
+}
+
+  .response-box {
+  text-align: left;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+  min-height: 80px;
+  max-height: 300px; /* Prevent stretching beyond this height */
+  overflow-y: auto;   /* Enable scrollbar if content exceeds max-height */
+  transition: all 0.3s ease; /* Smooth transition for height changes */
+}
+
+#answer {
+  font-size: 16px;
+  color: #e0e0e0;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+
+.app-footer {
+  margin-top: 30px;
+  font-size: 14px;
+  opacity: 0.7;
+} 

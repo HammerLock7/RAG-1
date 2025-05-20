@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RAG DEMO</title>
-    <link rel="stylesheet" href="/static/style.css">
-    <script src="/static/script.js" defer></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAG Assistant</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="/static/script.js" defer></script>
 </head>
 <body>
-    <div class="center">
-        <h1 class="title">RAG DEMO</h1>
-        <div class="main">
-            <h1>Ask a Question</h1>
-            <input type="text" id="question" placeholder="Type your question here" />
-            <button onclick="submitQuestion()">Ask</button>
-            <p id="answer"></p>
-        </div>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>📘 RAG Assistant</h1>
+    </header>
 
-    </div>
-    
+    <main class="chat-container">
+      <div class="chat-box">
+        <input type="text" id="question" placeholder="Ask me anything about your PDF..." />
+        <button onclick="submitQuestion()">
+          <i class="fas fa-paper-plane"></i> Submit
+        </button>
+      </div>
+      <div class="loader hidden" id="loader"></div>
+      <div class="response-box">
+        <h3>Answer:</h3>
+        <p id="answer">Your answer will appear here.</p>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <p>&copy; 2025 RAG Demo | By RealTek,inc</p>
+    </footer>
+  </div>
 </body>
 </html>

@@ -12,6 +12,18 @@ from ollama import chat
 from pdf2image import convert_from_path
 import pytesseract
 import os
+import time
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.prompts import PromptTemplate
+from langchain_community.chat_models import ChatOllama
+
+
+# config
+PDF_PATH = "Thermochemistry5.1-5.2.pdf"
+POPLER_PATH = r"C:\Program Files (x86)\poppler-24.08.0\Library\bin"
+TESSERACT_PATH = r"C:\Program Files\tesseract.exe"
+DB_DIR = "chroma_db"
+TXT_DUMP = "ocr_text.txt"
 
 #FastAPI setup
 app = FastAPI()
@@ -19,61 +31,100 @@ app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
-#Model
-class Query(BaseModel):
-    question : str
+#Pydantic Model
+class QueryRequest(BaseModel):
+    question: str
 
-#OCR & Langchain setup 
-print ("Extracting PDF...")
-images = convert_from_path(
-    "Thermochemistry5.1-5.2.pdf",
-    poppler_path=r"C:\Program Files (x86)\poppler-24.08.0\Library\bin"
-)
+#Embedding Model
 
-pytesseract.pytesseract.tesseract_cmd =  r"C:\Program Files\tesseract.exe"
-all_text= "\n".join([pytesseract.image_to_string(img)for img in images])
-docs = [Document(page_content=all_text)]
-
-print("Splitting text...")
-splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=750)
-chunks = splitter.split_documents(docs)
-
-print("Embedding chunks...")
+print("Loading embedding model...")
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-vectorstore = Chroma.from_documents(chunks, embeddings, persist_directory="chroma_db")
-vectorstore.persist()
 
-def retrieve(query: str) -> str:
-    results = vectorstore.similarity_search(query, k=3)
-    return "\n\n".join([res.page_content for res in results])
+#Load or Build VectorStore
 
-def generate_answer(query: str, context: str) -> str:
-    response = chat(
-        model = "llama3.2",
-        messages=[
-            {"role": "system", "content": "Answer the question based on the provided context."},
-            {"role": "user", "content": f"Context:\n{context}"},
-            {"role": "user", "content": query}
-        ]
+def extract_text_from_pdf():
+    """Extracts OCR text from PDF and saves to disk to avoid repeating this step."""
+    print("Extracting text from PDF via OCR...")
+    pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
+    images = convert_from_path(PDF_PATH, poppler_path=POPLER_PATH)
+    all_text = "\n".join([pytesseract.image_to_string(img) for img in images])
+    with open(TXT_DUMP, "w", encoding="utf-8") as f:
+        f.write(all_text)
+    return all_text
+
+if os.path.exists(DB_DIR) and os.listdir(DB_DIR):
+    print("Loading existing vectorstore...")
+    vectorstore = Chroma(persist_directory=DB_DIR, embedding_function=embeddings)
+else:
+    print("Building vectorstore for the first time...")
+
+    if os.path.exists(TXT_DUMP):
+        with open(TXT_DUMP, "r", encoding="utf-8") as f:
+            all_text = f.read()
+    else:
+        all_text = extract_text_from_pdf()
+
+    docs = [Document(page_content=all_text)]
+    splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=100)  # Less overlap = faster
+    chunks = splitter.split_documents(docs)
+
+    vectorstore = Chroma.from_documents(chunks, embeddings, persist_directory=DB_DIR)
+    vectorstore.persist()
+    print("Vectorstore built and saved.")
+
+retriever = vectorstore.as_retriever()
+
+#Retrieval + Generation Logic
+
+def retrieve(query, retriever, k=2):
+    """Returns top-k relevant context chunks for the user's question."""
+    docs = retriever.invoke(query)[:k]
+    context = "\n\n".join(doc.page_content for doc in docs)
+    print("\n--- Retrieved Context ---")
+    print(context)
+    print("-------------\n")
+    return context
+    
+
+def generate_answer(query, context, model_name="gemma:2b"):
+    """ Generate an answer from the retrieved context and query using ollama."""
+    prompt_template = PromptTemplate.from_template(
+        "Answer the question based only on the context below:\n\n"
+        "Context:\n{context}\n\n"
+        "Question:\n{question}\n\n"
+        "Answer:"
     )
-    print ("Raw Response: ", response)
-    return response["message"]["content"]
+    ollama_model = ChatOllama(model=model_name, temperature=0.3)
+    chain = prompt_template | ollama_model | StrOutputParser()
 
-#Web routes
+    answer= chain.invoke({
+        "context": context,
+        "question": query
+    })
+
+    print("\n--- Generated Answer---")
+    print(answer)
+    print("----------------\n")
+
+    return answer
+
+from functools import lru_cache
+
+@lru_cache(maxsize=100)
+def cached_generate_answer(query: str, context: str) -> str:
+    return generate_answer(query, context)
+
+
+#Web Routes
+
 @app.get("/", response_class=HTMLResponse)
 async def serve_frontend(request: Request):
+    """Serves the main HTML page."""
     return templates.TemplateResponse("index.html", {"request": request})
 
 @app.post("/query")
-async def query(data: Query):
-    print("User question:", data.question)
-
-    context = retrieve(data.question)
-    print("Retrieved context:", context[:300], "...") #shows the first 300 characters
-
-    answer = generate_answer(data.question, context)
-    print("Generated answer:", answer)
-
+def query_api(payload: QueryRequest):
+    query = payload.question
+    context = retrieve(query, retriever)
+    answer = generate_answer(query, context)
     return {"answer": answer}
-
-
